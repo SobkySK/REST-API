@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "a4d6f9a0-1b2b-40f1-8cef-7eb54b987da3",
+		"name": "Codium",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save person #1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Patrik\",\n    \"lastName\": \"Sobol\",\n    \"email\": \"patrik.sobol@mail.com\",\n    \"bankCards\": [\n        {\n            \"cardNumber\": \"1234123409877890\",\n            \"expiration\": \"09.10.2022\"\n        },\n        {\n            \"cardNumber\": \"1234123409877891\",\n            \"expiration\": \"09.10.2025\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save person #2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ján\",\n    \"lastName\": \"Novák\",\n    \"email\": \"novak.jan@mail.com\",\n    \"bankCards\": [\n        {\n            \"cardNumber\": \"1357246801234789\",\n            \"expiration\": \"31.12.2022\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save person #3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ján\",\n    \"lastName\": \"Novák\",\n    \"email\": \"jan.novak@mail.com\",\n    \"bankCards\": [\n        {\n            \"cardNumber\": \"1357246801234780\",\n            \"expiration\": \"31.12.2022\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/find/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"find",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

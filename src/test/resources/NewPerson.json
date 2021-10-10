@@ -1,0 +1,15 @@
+{
+  "name": "Patrik",
+  "lastName": "Tester",
+  "email": "patrik.sobol@test.com",
+  "bankCards": [
+    {
+      "cardNumber": "1234123409877000",
+      "expiration": "09.10.2022"
+    },
+    {
+      "cardNumber": "1234123409877001",
+      "expiration": "09.10.2025"
+    }
+  ]
+}
