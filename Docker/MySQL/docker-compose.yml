@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: 'bank'
+      MYSQL_USER: 'sobol_bank'
+      MYSQL_PASSWORD: 'HelloFromTheOtherSide'
+      MYSQL_ROOT_PASSWORD: 'HelloFromTheOtherSide'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - MySQL_Data:/var/lib/mysql
+volumes:
+  MySQL_Data:
